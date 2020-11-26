@@ -199,9 +199,11 @@ function piratepay_gateway_init() {
 				)
 			));
 
-			$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
+			$response_code = wp_remote_retrieve_response_code( $response );
 			
-			if( wp_remote_retrieve_response_code( $response ) == '201' ){
+			if ( $response_code == 200 || $response_code == 201 ) {
+
+				$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
 
 				if (isset($api_response['data']['crypto_address'])){
 
@@ -261,9 +263,11 @@ function piratepay_gateway_init() {
 					)
 				));
 	
-				$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
+				$response_code = wp_remote_retrieve_response_code( $response );
 				
-				if( wp_remote_retrieve_response_code( $response ) == '201' ){
+				if ( $response_code == 200 || $response_code == 201 ) {
+
+					$api_response = json_decode( wp_remote_retrieve_body( $response ), true );
 	
 					if (isset($api_response['data']['crypto_address'])){
 	
