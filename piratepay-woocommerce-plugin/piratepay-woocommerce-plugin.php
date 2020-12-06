@@ -210,7 +210,7 @@ function piratepay_gateway_init() {
 					$htmlOutput = '<div class="container" style=" padding: 10px;" align="center">';
 					$htmlOutput .= '<h2>PiratePay</h2>';
 					$htmlOutput .= '<h4>PirateChain (ARRR) Cryptocurrency Payment:</h4>';
-					$htmlOutput .= '<img src=' . $api_response['data']['crypto_qr'] . '  alt="ARRR QR Code" width="300" height="300"> ';
+					$htmlOutput .= '<img src=' . $api_response['data']['crypto_qr'] . ' loading="eager" alt="ARRR QR Code" width="300" height="300"> ';
 					$htmlOutput .= '<p><b>ARRR Market Price:</b><br> ' . $api_response['data']['crypto_market_price'] . '</p>';
 					$htmlOutput .= '<p><b>ARRR Order Price:</b><br> ' . $api_response['data']['crypto_price'] . '</p>';
 					$htmlOutput .= '<p><b>ARRR Address:</b><br> ' . $api_response['data']['crypto_address'] . '</p>';
