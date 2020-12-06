@@ -3,7 +3,7 @@
  * Plugin Name: PiratePay WooCommerce Plugin
  * Plugin URI: https://cryptocurrencycheckout.com/
  * Description: This plugin allows you to connect your WooCommerce store to the PiratePay API so you can start accepting PirateChain (ARRR) as a payment on your store. 
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: cryptocurrencycheckout
  * Text Domain: piratepay-wc-gateway
  * Domain Path: /i18n/languages/
